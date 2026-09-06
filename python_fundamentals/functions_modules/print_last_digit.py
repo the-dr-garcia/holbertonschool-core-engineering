@@ -4,8 +4,6 @@
 
 def print_last_digit(number):
     """Print and return the last digit of number as a positive value."""
-    last_digit = number % 10
-    if last_digit < 0:
-        last_digit += 10
+    last_digit = abs(number) % 10
     print("{:d}".format(last_digit), end="")
     return last_digit
