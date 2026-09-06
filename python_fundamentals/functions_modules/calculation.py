@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import functions from calculator_1 and print results."""
+"""Print results of arithmetic operations."""
 from calculator_1 import add, sub, mul, div
 
 a = 10
