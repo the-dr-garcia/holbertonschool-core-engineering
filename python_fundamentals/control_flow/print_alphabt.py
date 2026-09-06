@@ -3,5 +3,5 @@ result = ""
 for i in range(97, 123):
     letter = chr(i)
     if letter != 'q' and letter != 'e':
-        result += letter
+        result = "{}{}".format(result, letter)
 print(result)
