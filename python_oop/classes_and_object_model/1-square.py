@@ -1,6 +1,4 @@
-chmod +x 1-square.py
-git add 1-square.py
-git commit -m "Add 1-square.py script"0;276;0c#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Defines a Square class."""
 
 
