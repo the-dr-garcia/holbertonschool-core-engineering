@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.chat {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+}
+
+.status {
+    margin: 0 0 12px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.status.connected {
+    color: #1a7f37;
+}
+
+.status.disconnected {
+    color: #cf222e;
+}
+
+.messages {
+    list-style: none;
+    margin: 0 0 12px;
+    padding: 8px;
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message {
+    max-width: 75%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    word-wrap: break-word;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background: #0969da;
+    color: #fff;
+}
+
+.message.received {
+    align-self: flex-start;
+    background: #e9ecef;
+}
+
+.time {
+    display: block;
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+.form {
+    display: flex;
+    gap: 8px;
+}
+
+.form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #0969da;
+    color: #fff;
+    cursor: pointer;
+}
